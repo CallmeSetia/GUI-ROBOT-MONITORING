@@ -45,7 +45,7 @@ class MySensor():
     def get_feedbackRobot(self):
         global DATA_MOTOR, ARAH_MOTOR
         try:
-            url = 'http://192.168.244.245:5000'
+            url = 'http://10.42.0.1:5000'
             resp = requests.get(url=url)
             data = resp.json()  # Check the JSON
             DATA_MOTOR = data
